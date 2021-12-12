@@ -2,12 +2,19 @@ body{
     margin: 0;
     font-family: Roboto, sans-serif;
     display: flex;
+    flex-direction: column;
 }
 
 ul {
     margin: 0;
     list-style-type: none;
     padding-left: 0px;
+    display: flex;
+    gap: 32px;
+}
+
+.header, .random-information, .quote-container, .footer {
+    padding: 0 200px;
 }
 
 .header, .footer {
@@ -17,8 +24,8 @@ ul {
 
 .header-1 {
     display: flex;
-    justify-content: space-evenly;
-    padding: 32px;
+    justify-content: space-between;
+    padding: 32px 0;
 }
 
 .header-logo {
@@ -29,4 +36,63 @@ ul {
 
 .links-list ul{
     display: flex;
+    font-size: 18px;
+    color: #f9faf8;
+}
+
+.header-2 {
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+    margin: 100px 0;
+}
+
+.header-2 h1 {
+    font-size: 48px;
+    font-weight: 950;
+    margin-bottom: 0;
+}
+
+.header-2 p {
+    margin-top: 0;
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+.header-2 button {
+    width: 150px;
+    padding: 10px;
+    color: white;
+    background-color: #3882f6;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+}
+
+.h2-left-column {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    width: 100%;
+}
+
+.h2-right-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4e6586;
+    flex-grow: 1;
+    width: 100%;
+}
+
+.random-information h2 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 950;
+    color: #1f2937;
+}
+
+.ri-subsections {
+    
 }
